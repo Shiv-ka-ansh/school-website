@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - SMPS Jhansi</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="https://images.unsplash.com/photo-1741769971462-0282f6df88d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBsb2dvJTIwU01QU3xlbnwxfHx8fDE3NTY5Nzc5NTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="SMPS Jhansi Logo" class="logo">
+                </div>
+                <div class="school-info">
+                    <h1 class="school-name">SMPS Jhansi</h1>
+                    <p class="school-subtitle">Siddheshwar Mountain Public School</p>
+                </div>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#academics" class="nav-link">Academics</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="index.html#notices" class="nav-link">Notices</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="admissions.html" class="btn-admission">Admissions</a>
+            </div>
+
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="hamburger"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="index.html#about" class="mobile-nav-link">About</a>
+        <a href="index.html#academics" class="mobile-nav-link">Academics</a>
+        <a href="gallery.html" class="mobile-nav-link active">Gallery</a>
+        <a href="index.html#notices" class="mobile-nav-link">Notices</a>
+        <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+        <a href="admissions.html" class="mobile-nav-link btn-admission">Admissions</a>
+    </div>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Gallery</span>
+            </div>
+            <h1 class="page-title">School <span class="highlight">Gallery</span></h1>
+            <p class="page-description">
+                Explore our vibrant school life through photos of events, activities, and memorable moments that showcase our commitment to holistic education.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Controls -->
+    <section class="gallery-controls">
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="search-container">
+                    <input type="text" id="gallery-search" placeholder="Search photos..." class="search-input">
+                    <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Photos</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="academic">Academic</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural</button>
+                    <button class="filter-btn" data-filter="facilities">Facilities</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Event Photos -->
+                <div class="gallery-item" data-category="events" data-title="Annual Day Celebration 2024">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBhY3Rpdml0aWVzfGVufDF8fHx8MTc1Njg2OTQ4NHww&ixlib=rb-4.1.0&q=80&w=800" alt="Annual Day Celebration">
+                    <div class="gallery-overlay">
+                        <h4>Annual Day Celebration 2024</h4>
+                        <p>Students performing cultural programs</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events" data-title="Independence Day Celebration">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBmbGFnJTIwY2VsZWJyYXRpb258ZW58MXx8fHwxNzU2OTc3OTU0fDA&ixlib=rb-4.1.0&q=80&w=800" alt="Independence Day">
+                    <div class="gallery-overlay">
+                        <h4>Independence Day Celebration</h4>
+                        <p>Flag hoisting ceremony and patriotic performances</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events" data-title="Science Exhibition">
+                    <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBzY2llbmNlJTIwZXhoaWJpdGlvbnxlbnwxfHx8fDE3NTY5Nzc5NTR8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Science Exhibition">
+                    <div class="gallery-overlay">
+                        <h4>Science Exhibition</h4>
+                        <p>Students showcasing innovative projects</p>
+                    </div>
+                </div>
+
+                <!-- Academic Photos -->
+                <div class="gallery-item" data-category="academic" data-title="Chemistry Laboratory">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBzY2llbmNlJTIwbGFifGVufDF8fHx8MTc1Njg2OTQ4NHww&ixlib=rb-4.1.0&q=80&w=800" alt="Chemistry Lab">
+                    <div class="gallery-overlay">
+                        <h4>Chemistry Laboratory</h4>
+                        <p>Advanced science experiments and learning</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="academic" data-title="School Library">
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBsaWJyYXJ5fGVufDF8fHx8MTc1Njg2OTQ4NHww&ixlib=rb-4.1.0&q=80&w=800" alt="School Library">
+                    <div class="gallery-overlay">
+                        <h4>School Library</h4>
+                        <p>Quiet study spaces and extensive book collection</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="academic" data-title="Computer Laboratory">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBjb21wdXRlciUyMGxhYnxlbnwxfHx8fDE3NTY5Nzc5NTR8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Computer Lab">
+                    <div class="gallery-overlay">
+                        <h4>Computer Laboratory</h4>
+                        <p>Modern technology and programming education</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="academic" data-title="Classroom Learning">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBjaGlsZHJlbiUyMGxlYXJuaW5nfGVufDF8fHx8MTc1Njg2OTQ4NHww&ixlib=rb-4.1.0&q=80&w=800" alt="Classroom">
+                    <div class="gallery-overlay">
+                        <h4>Interactive Classroom Learning</h4>
+                        <p>Engaged students in modern classrooms</p>
+                    </div>
+                </div>
+
+                <!-- Sports Photos -->
+                <div class="gallery-item" data-category="sports" data-title="Annual Sports Meet">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBzcG9ydHN8ZW58MXx8fHwxNzU2ODY5NDg0fDA&ixlib=rb-4.1.0&q=80&w=800" alt="Sports Meet">
+                    <div class="gallery-overlay">
+                        <h4>Annual Sports Meet</h4>
+                        <p>Athletic competitions and team spirit</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sports" data-title="Football Team">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBmb290YmFsbHxlbnwxfHx8fDE3NTY5Nzc5NTR8MA&ixlib=rb-4.1.0&q=80&w=800" alt="Football Team">
+                    <div class="gallery-overlay">
+                        <h4>School Football Team</h4>
+                        <p>Champions in inter-school tournaments</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sports" data-title="Basketball Court">
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBiYXNrZXRiYWxsfGVufDF8fHx8MTc1Njk3Nzk1NHww&ixlib=rb-4.1.0&q=80&w=800" alt="Basketball">
+                    <div class="gallery-overlay">
+                        <h4>Basketball Training</h4>
+                        <p>Developing athletic skills and teamwork</p>
+                    </div>
+                </div>
+
+                <!-- Cultural Photos -->
+                <div class="gallery-item" data-category="cultural" data-title="Music Performance">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBtdXNpYyUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc1Njk3Nzk1NHww&ixlib=rb-4.1.0&q=80&w=800" alt="Music Performance">
+                    <div class="gallery-overlay">
+                        <h4>School Orchestra Performance</h4>
+                        <p>Musical talents and artistic expression</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cultural" data-title="Dance Performance">
+                    <img src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBkYW5jZSUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc1Njk3Nzk1NHww&ixlib=rb-4.1.0&q=80&w=800" alt="Dance Performance">
+                    <div class="gallery-overlay">
+                        <h4>Cultural Dance Program</h4>
+                        <p>Traditional and contemporary dance forms</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cultural" data-title="Art Exhibition">
+                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBhcnQlMjBleGhpYml0aW9ufGVufDF8fHx8MTc1Njk3Nzk1NHww&ixlib=rb-4.1.0&q=80&w=800" alt="Art Exhibition">
+                    <div class="gallery-overlay">
+                        <h4>Student Art Exhibition</h4>
+                        <p>Creative works and artistic achievements</p>
+                    </div>
+                </div>
+
+                <!-- Facilities Photos -->
+                <div class="gallery-item" data-category="facilities" data-title="Main Campus Building">
+                    <img src="https://images.unsplash.com/photo-1603958956194-cf9718dba4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBidWlsZGluZyUyMHN0dWRlbnRzfGVufDF8fHx8MTc1Njg2OTQ4NHww&ixlib=rb-4.1.0&q=80&w=800" alt="School Building">
+                    <div class="gallery-overlay">
+                        <h4>Main Campus Building</h4>
+                        <p>Modern architecture and learning spaces</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities" data-title="School Cafeteria">
+                    <img src="https://images.unsplash.com/photo-1556909114-4f6e8ceb6b0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBjYWZldGVyaWF8ZW58MXx8fHwxNzU2OTc3OTU0fDA&ixlib=rb-4.1.0&q=80&w=800" alt="Cafeteria">
+                    <div class="gallery-overlay">
+                        <h4>School Cafeteria</h4>
+                        <p>Nutritious meals and dining facilities</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities" data-title="School Garden">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBnYXJkZW58ZW58MXx8fHwxNzU2OTc3OTU0fDA&ixlib=rb-4.1.0&q=80&w=800" alt="School Garden">
+                    <div class="gallery-overlay">
+                        <h4>School Garden</h4>
+                        <p>Green spaces and environmental learning</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities" data-title="Transportation">
+                    <img src="https://images.unsplash.com/photo-1544395612-42bf70534fc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBidXN8ZW58MXx8fHwxNzU2OTc3OTU0fDA&ixlib=rb-4.1.0&q=80&w=800" alt="School Bus">
+                    <div class="gallery-overlay">
+                        <h4>School Transportation</h4>
+                        <p>Safe and reliable transport services</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn-secondary" id="load-more-btn">Load More Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">&times;</button>
+            <button class="lightbox-prev" id="lightbox-prev">‹</button>
+            <button class="lightbox-next" id="lightbox-next">›</button>
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://images.unsplash.com/photo-1741769971462-0282f6df88d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBsb2dvJTIwU01QU3xlbnwxfHx8fDE3NTY5Nzc5NTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="SMPS Jhansi Logo" class="footer-logo-img">
+                        <div>
+                            <h4>SMPS Jhansi</h4>
+                            <p>Siddheshwar Mountain Public School</p>
+                        </div>
+                    </div>
+                    <p>Nurturing minds, building futures through quality education and holistic development.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#academics">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Academic</h4>
+                    <ul>
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="#">Results</a></li>
+                        <li><a href="#">Calendar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p>📍 123 Education Street, Jhansi, UP 284001</p>
+                        <p>📞 +91 510 123 4567</p>
+                        <p>✉️ info@smpsjhansi.edu.in</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 SMPS Jhansi. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>
